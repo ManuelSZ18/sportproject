@@ -31,12 +31,15 @@ p{
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
     grid-template-rows: 80px 20% 20% 20% 20%;
-    
+
 }
 
 nav{
     grid-column-start: 1;
     grid-column-end: 6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #062b6e;
     color: white;
     padding: 10px;
