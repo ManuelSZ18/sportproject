@@ -1,3 +1,6 @@
+
+/*Formateo de la pagina*/
+
 *{
     min-width: 0;
     font: inherit;
@@ -27,21 +30,27 @@ p{
     text-wrap: pretty;
 }
 
+/*Body */
+
 #container{
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 80px 20% 20% 20% 20%;
+    grid-template-rows: 70px 20% 20% 20% 70px;
 
 }
 
-nav{
+/*Encabezado*/
+
+header{
     grid-column-start: 1;
     grid-column-end: 6;
+}
+
+nav{    
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #062b6e;
-    color: white;
     padding: 10px;
 }
 
@@ -55,15 +64,60 @@ ul {
     display: flex;
 }
 
-li {
-    margin: 0px 10px;
+#register{
+    color: #fff;
+}
+#credentials li {
+    margin: 0px 25px;
 }
 
-a {
+header a {
     text-decoration: none;
-    color: white;
+    color: #ffffff;
 }
 
-a:hover {
-    color: #ffe600;
+#signIn{
+    margin: -5px;
+    padding: 5px 10px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 0px; /* Color del borde */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: #ffffff; /* Color de fondo */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transición suave al pasar el mouse */
+  }
+
+#signIn a{
+    color: #062b6e;
 }
+#signIn:hover{
+background-color: #ffd900;    
+}
+
+/*Footer*/
+
+footer{
+    grid-column: 1 / 6;
+    grid-row: 5 / 6;
+    background-color: #062b6e;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    align-items: center;
+    padding: 0 500px;
+}
+
+footer ul li{
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    color:#fff;
+}
+
+footer a{
+    color: #fff;
+    text-decoration: none;
+}
+
